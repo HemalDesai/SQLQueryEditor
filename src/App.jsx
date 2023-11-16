@@ -35,7 +35,7 @@ const App = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="min-h-screen w-full flex flex-col items-center"
+      className="min-h-screen w-full flex flex-col items-center border border-gray-300"
       style={{ backgroundColor: "#F8F8FE" }}
     >
       <h1 className="font-bold mt-5 text-3xl">SQL Query Editor</h1>
@@ -43,7 +43,7 @@ const App = () => {
         variants={slideInVariant}
         initial="hidden"
         animate="visible"
-        className="w-3/4 p-5 mt-5 rounded-3xl flex flex-col items-center"
+        className="w-3/4 p-5 mt-5 rounded-3xl flex flex-col items-center border border-gray-300"
         style={{ backgroundColor: "#EAF3FE" }}
       >
         <Editor
@@ -54,7 +54,7 @@ const App = () => {
           onChange={handleEditorChange}
         />
 
-        <div className=" w-full flex p-5 justify-center">
+        <div className="w-full flex p-5 justify-center ">
           <SQLDropdown setQuery={setQuery} className="ml-5 " />
           <div className="ml-5 bg-blue-400 text-white px-4 py-1 rounded-md">
             <motion.button
@@ -71,7 +71,7 @@ const App = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: result.length > 0 ? 1 : 0 }}
-        className="w-3/4 mt-4"
+        className="w-3/4 mt-4 mb-4 rounded-lg border border-gray-300"
       >
         <DataTable data={result} />
       </motion.div>
