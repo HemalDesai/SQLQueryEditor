@@ -1,5 +1,3 @@
-// Define your array
-
 const UserDataColumns = [
   {
     title: "Name",
@@ -22,7 +20,7 @@ for (let i = 0; i < 1000; i++) {
   userData.push({
     key: i,
     name: `Edward King ${i}`,
-    age: (32 - i) % 80,
+    age: 20 + (i % 60), // This will cycle ages from 20 to 79
     address: `London, Park Lane no. ${i}`,
   });
 }

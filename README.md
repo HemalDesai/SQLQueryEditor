@@ -1,4 +1,6 @@
 # SQL Query Editor
+## Deployed link
+https://65563d5b952b94178c314cc7--lucky-paprenjak-e9fb91.netlify.app/
 ## Overview
 This project appears to be a web application designed for SQL query editing and execution. Here's a basic overview of its components and functionalities:
 
