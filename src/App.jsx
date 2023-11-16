@@ -1,6 +1,6 @@
 import Editor from "@monaco-editor/react";
 import SQLDropdown from "./components/Dropdown";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import DataTable from "./components/Table";
 import mapper from "./assets/mapper";
 import { motion } from "framer-motion";
@@ -10,17 +10,12 @@ const App = () => {
   const [result, setResult] = useState([]);
 
   const handleRun = () => {
-    console.log(query);
     const queryResult = mapper({ query });
     setResult(queryResult);
-    console.log("output", queryResult);
   };
   function handleEditorChange(value, event) {
     setQuery(value);
   }
-  useEffect(() => {
-    console.log("initial", query);
-  }, [query]);
   const slideInVariant = {
     hidden: { x: -200, opacity: 0 },
     visible: {

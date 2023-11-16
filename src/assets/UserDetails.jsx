@@ -19,7 +19,7 @@ const UserDataColumns = [
 
 const userData = [];
 for (let i = 0; i < 1000; i++) {
-    userData.push({
+  userData.push({
     key: i,
     name: `Edward King ${i}`,
     age: (32 - i) % 80,
@@ -27,7 +27,4 @@ for (let i = 0; i < 1000; i++) {
   });
 }
 
-// Export the array
-export { UserDataColumns, userData }; // for default export
-// or
-// for named export
+export { UserDataColumns, userData };

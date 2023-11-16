@@ -1,4 +1,4 @@
-import { Dropdown, Select } from "antd";
+import { Select } from "antd";
 const SQLDropdown = ({ setQuery }) => {
   const handleChange = (e) => {
     console.log(e);
