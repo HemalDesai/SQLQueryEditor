@@ -1,7 +1,10 @@
-import Editor from "@monaco-editor/react";
-import SQLDropdown from "./components/Dropdown";
+import { lazy } from 'react';
+
+const Editor = lazy(() => import("@monaco-editor/react"));
+const SQLDropdown = lazy(() => import("./components/Dropdown"));
+const DataTable = lazy(() => import("./components/Table"));
+
 import { useState } from "react";
-import DataTable from "./components/Table";
 import mapper from "./assets/mapper";
 import { motion } from "framer-motion";
 
