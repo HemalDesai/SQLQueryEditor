@@ -31,10 +31,17 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 git clone https://github.com/HemalDesai/SQLQueryEditor.git
+```
+```sh
 cd SQLQueryEditor
+```
+```sh
 npm i
+```
+```sh
 npm run dev
 ```
+
 
 
 
