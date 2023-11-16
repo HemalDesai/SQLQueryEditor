@@ -6,7 +6,7 @@ import mapper from "./assets/mapper";
 import { motion } from "framer-motion";
 
 const App = () => {
-  const [query, setQuery] = useState("hello");
+  const [query, setQuery] = useState("--Write your SQL query here");
   const [result, setResult] = useState([]);
 
   const handleRun = () => {
@@ -43,7 +43,7 @@ const App = () => {
         variants={slideInVariant}
         initial="hidden"
         animate="visible"
-        className="w-3/4 p-5 mt-5 rounded-3xl flex flex-col items-center border border-gray-300"
+        className="w-3/4 p-5 mt-5 rounded-3xl flex flex-col items-center border border-gray-300 "
         style={{ backgroundColor: "#EAF3FE" }}
       >
         <Editor
@@ -71,7 +71,7 @@ const App = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: result.length > 0 ? 1 : 0 }}
-        className="w-3/4 mt-4 mb-4 rounded-lg border border-gray-300"
+        className="w-3/4 mt-4 mb-4  rounded-lg border border-gray-300"
       >
         <DataTable data={result} />
       </motion.div>

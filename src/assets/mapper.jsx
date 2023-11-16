@@ -57,7 +57,7 @@ const invertedQueriesMap = {
 const mapper = ({ query }) => {
   console.log("initial", query);
   console.log("ghem,imdsa", removeSpaces(query));
-  const result = invertedQueriesMap[removeSpaces(query)] || "hemal";
+  const result = invertedQueriesMap[removeSpaces(query)] || [UserDataColumns, userData];
   return result;
 };
 
